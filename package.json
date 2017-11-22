@@ -4,22 +4,24 @@
   "private": true,
   "author": "Pietro Caselani <pc1992@gmail.com>",
   "description": "A simple bot to test all the things",
+  "scripts": {
+    "start": "bin/hubot --name \"pcbot\" \"$@\"",
+    "flowdock": "bin/hubot -a flowdock",
+    "slack": "bin/hubot -a slack",
+    "lint": "node_modules/.bin/eslint .",
+    "dev": "bin/hubot",
+    "dotenv": "dotenv yarn start"
+  },
   "dependencies": {
     "hubot": "^2.19.0",
-    "hubot-diagnostics": "0.0.1",
-    "hubot-google-images": "^0.2.6",
-    "hubot-google-translate": "^0.2.0",
     "hubot-help": "^0.2.0",
-    "hubot-heroku-keepalive": "^1.0.2",
-    "hubot-maps": "0.0.2",
-    "hubot-pugme": "^0.1.0",
-    "hubot-redis-brain": "0.0.3",
-    "hubot-rules": "^0.1.1",
     "hubot-scripts": "^2.17.2",
-    "hubot-shipit": "^0.2.0",
-    "hubot-slack": "^4.1.0"
+    "hubot-heroku-keepalive": "^1.0.2",
+    "hubot-slack": "^4.1.0",
+    "bluebird": "^3.5.0",
+    "got": "^6.7.1"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": ">=6.0.0"
   }
 }
